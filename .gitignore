@@ -137,12 +137,12 @@ celerybeat.pid
 # Environments
 .env
 .envrc
-.venv
+.venv_ai_mock
 env/
-venv/
+venv_ai_mock/
 ENV/
 env.bak/
-venv.bak/
+venv_ai_mock.bak/
 
 # Spyder project settings
 .spyderproject
