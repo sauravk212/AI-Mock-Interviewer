@@ -1,4 +1,4 @@
-HUMAN_PROMPT = f"""
+HUMAN_PROMPT = """
     Analyze the following CV and Job Description:
     CV: {cv_content}
 
