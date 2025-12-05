@@ -1,5 +1,7 @@
 import PyPDF2
 from langOllama import generate_questions
+from text_to_speech import text_to_speech_bark
+
 
 def read_pdf(file_path):
     with open(file_path, 'rb') as file:
@@ -28,3 +30,7 @@ print(jd_content)
 
 questions = generate_questions(cv_content, jd_content)
 print(questions)
+
+
+for i, question in enumerate(questions.split('\n\n')):
+    text_to_speech_bark(i+1, question)

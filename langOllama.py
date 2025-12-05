@@ -9,6 +9,6 @@ def generate_questions(cv_content, jd_content):
         SystemMessage(content=SYSTEM_PROMPT),
         HumanMessage(content=prompt),
     ]
-    model = ChatOllama(model="deepseek-r1:1.5b", temperature=0)
+    model = ChatOllama(model="llama3.1", temperature=0)
     response = model.invoke(messages)
     return response.content
